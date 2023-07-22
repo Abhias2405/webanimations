@@ -311,7 +311,6 @@ body {
 #page9>h1>span{
     color: #000;
 }
-
 #page10{
     position: relative;
     height: 100vh;
@@ -374,7 +373,6 @@ body {
 #page12>h1>span{
     color: #000;
 }
-
 #page13{
     position: relative;
     height: 100vh;
@@ -472,7 +470,6 @@ body {
     font-weight: 500;
     border: none;
 }
-
 #page17{
     position: relative;
     height: 100vh;
@@ -556,4 +553,58 @@ body {
 }
 #center-page20>h1{
     margin-bottom: 1.7vw;
+}
+#page21{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page21>#troff{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+    z-index: 9;
+}
+#page21>#tron{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+}
+#page22{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page22>#snroff{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+    z-index: 9;
+}
+#page22>#snron{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+}
+#page23{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page23>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity:0
 }
