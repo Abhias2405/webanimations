@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            list-style: none;
+        }
+
+        .projects li {
+            margin: 10px 0;
+        }
+
+        .projects a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            display: inline-block;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .projects a:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .projects a {
+                font-size: 1.2rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Slider Projects</h1>
+        <ul class="projects">
+            <li><a href="/01_Can_Silder/index.html" target="_blank">Can Slider</a></li>
+            <li><a href="/02_Slider_Animal/index.html" target="_blank">Slider Animal Kindom</a></li>
+            <li><a href="/03_Slider_Person/index.html" target="_blank">Slider Person</a></li>
+            <li><a href="/04_Starbucks/index.html" target="_blank">Slider Coffee</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
