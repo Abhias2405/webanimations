@@ -4,93 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <link rel="shortcut icon" href="./asserts/favicon.png" type="image/x-icon">
+    <title>Web Animation</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            text-align: center;
-        }
-
-        .container {
-            animation: fadeIn 1.2s ease-in-out;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
         }
 
         h1 {
-            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .project-card {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 16px;
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s;
         }
 
-        .projects {
-            list-style: none;
+        .project-card:hover {
+            transform: translateY(-5px);
         }
 
-        .projects li {
-            margin: 10px 0;
+        .project-details {
+            flex: 1;
         }
 
-        .projects a {
+        a {
+            color: #4db6ac;
             text-decoration: none;
-            color: white;
-            font-size: 1.5rem;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            display: inline-block;
-            transition: transform 0.3s ease, background 0.3s ease;
+            font-weight: bold;
         }
 
-        .projects a:hover {
-            background: rgba(255, 255, 255, 0.4);
-            transform: scale(1.1);
+        a:hover {
+            text-decoration: underline;
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .projects a {
-                font-size: 1.2rem;
-                padding: 8px 16px;
-            }
+        .video-container {
+            flex-shrink: 0;
+            width: 300px;
+            height: 170px;
+            border-radius: 8px;
+            overflow: hidden;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Slider Projects</h1>
-        <ul class="projects">
-            <li><a href="/01_Can_Silder/index.html" target="_blank">Can Slider</a></li>
-            <li><a href="/02_Slider_Animal/index.html" target="_blank">Slider Animal Kindom</a></li>
-            <li><a href="/03_Slider_Person/index.html" target="_blank">Slider Person</a></li>
-            <li><a href="/04_Starbucks/index.html" target="_blank">Slider Coffee</a></li>
-        </ul>
+    <h1>Web Animation Projects</h1>
+
+    <div class="project-card">
+        <div class="project-details">
+            <h2>3D Can Rotation</h2>
+            <p>This project demonstrates smooth 3d animation.
+            </p>
+            <a href="./https://abhias2405.github.io/3D_Can_Rotation/" target="_blank">Visit Site <i
+                    class="ri-external-link-line"></i></a>
+        </div>
+        <div class="video-container">
+            <video width="100%" height="100%" src="./asserts/Drink It 1.mp4" loop muted autoplay playsinline></video>
+        </div>
     </div>
+    <div class="project-card">
+        <div class="project-details">
+            <h2>Animal Slider</h2>
+            <p>This project demonstrates smooth sliders.
+            </p>
+            <a href="./02_Slider_Animal/index.html" target="_blank">Visit Site <i class="ri-external-link-line"></i></a>
+        </div>
+        <div class="video-container">
+            <video width="100%" height="100%" src="./asserts/Animal.mp4" loop muted autoplay playsinline></video>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-details">
+            <h2>Animal Slider</h2>
+            <p>This project demonstrates smooth sliders.
+            </p>
+            <a href="./03_Slider_Person/index.html" target="_blank">Visit Site <i class="ri-external-link-line"></i></a>
+        </div>
+        <div class="video-container">
+            <video width="100%" height="100%" src="./asserts/Nature - Person.mp4" loop muted autoplay
+                playsinline></video>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-details">
+            <h2>Coffee Shop</h2>
+            <p>This project demonstrates smooth sliders.
+            </p>
+            <a href="./04_Starbucks/index.html" target="_blank">Visit Site <i class="ri-external-link-line"></i></a>
+        </div>
+        <div class="video-container">
+            <video width="100%" height="100%" src="./asserts/Coffee Shop.mp4" loop muted autoplay playsinline></video>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-details">
+            <h2>Can Slider</h2>
+            <p>This project demonstrates smooth sliders.
+            </p>
+            <a href="./01_Can_Silder/index.html" target="_blank">Visit Site <i class="ri-external-link-line"></i></a>
+        </div>
+        <div class="video-container">
+            <video width="100%" height="100%" src="./asserts/Drink It.mp4" loop muted autoplay playsinline></video>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
