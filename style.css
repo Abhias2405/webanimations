@@ -88,6 +88,8 @@ nav button svg {
 }
 
 
+
+
 #page1 {
     height: 100vh;
     width: 100%;
@@ -199,6 +201,11 @@ nav button svg {
     right: 0;
     z-index: 2;
 }
+
+
+
+
+
 #page2 {
     height: 100vh;
     width: 100%;
@@ -330,6 +337,7 @@ nav button svg {
     z-index: 99999;
 
 }
+
 #page4 {
     min-height: 100vh;
     width: 100%;
@@ -704,4 +712,6 @@ summary::marker {
 #btm6-part2 h4:nth-child(7){
     transform: translateX(50%);
 }
+
+
 
