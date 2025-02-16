@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./asserts/favicon.png" type="image/x-icon">
+    <title>Web Animation</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .project-card {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-details {
+            flex: 1;
+        }
+
+        a {
+            color: #4db6ac;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .video-container {
+            flex-shrink: 0;
+            width: 300px;
+            height: 170px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Web Animation Projects</h1>
+
+    <div class="project-card">
+        <div class="project-details">
+            <h2>Obeys Agency</h2>
+            <p>This project demonstrates smooth scrolling effects, loading, cursor, locomotive animations using <b>GSAP,
+                    Locomotive, Three JS</b> and
+                <b>ScrollTrigger.</b>
+            </p>
+            <a href="https://abhias2405.github.io/obeys_agency/" target="_blank">Visit Site <i
+                    class="ri-external-link-line"></i></a>
+        </div>
+        <div class="video-container">
+            <iframe width="100%" height="100%" src="./asserts/Obys Agency.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>
