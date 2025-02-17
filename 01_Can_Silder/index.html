@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink It</title>
+    <link rel="shortcut icon" href="./img/leaves.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <header>
+        <div>Drink It</div>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>CONTACT</li>
+                <li>INFO</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="carousel">
+        <div class="list">
+            <div class="item active" style="--background: #EA3D41">
+                <div class="content">Strawberry</div>
+                <img src="img/fruit_strawberry.png" class="fruit">
+            </div>
+            <div class="item" style="--background: #2D5643">
+                <div class="content">avocado</div>
+                <img src="img/fruit_avocado.png" class="fruit">
+            </div>
+            <div class="item hidden" style="--background: #E7A043">
+                <div class="content">orange</div>
+                <img src="img/fruit_orange.png" class="fruit">
+            </div>
+        </div>
+        <div class="leaves"></div>
+        <div class="mockup"></div>
+        <div class="shadow"></div>
+        <div class="arrow">
+            <button id="prev" aria-label="Previous">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button id="next" aria-label="Next">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
